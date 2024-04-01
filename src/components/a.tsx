@@ -13,7 +13,7 @@ export function SignupFormDemo() {
   const [agreeTerms, setAgreeTerms] = useState(false);
   const [agreePrivacy, setAgreePrivacy] = useState(false);
 
-  const handleCheckboxChange = (e) => {
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target;
     if (name === "terms") {
       setAgreeTerms(checked);
@@ -22,7 +22,7 @@ export function SignupFormDemo() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (agreeTerms && agreePrivacy) {
       console.log("Form submitted");
@@ -31,6 +31,7 @@ export function SignupFormDemo() {
       console.log("Please agree to terms and conditions and privacy policy");
     }
   };
+  
   return (
     <div className=" max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
       
