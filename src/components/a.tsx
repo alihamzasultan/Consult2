@@ -10,26 +10,9 @@ import {
 } from "@tabler/icons-react";
 
 export function SignupFormDemo() {
-  const [agreeTerms, setAgreeTerms] = useState(false);
-  const [agreePrivacy, setAgreePrivacy] = useState(false);
-
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, checked } = e.target;
-    if (name === "terms") {
-      setAgreeTerms(checked);
-    } else if (name === "privacy") {
-      setAgreePrivacy(checked);
-    }
-  };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (agreeTerms && agreePrivacy) {
-      console.log("Form submitted");
-      // Proceed with form submission logic
-    } else {
-      console.log("Please agree to terms and conditions and privacy policy");
-    }
+    console.log("Form submitted");
   };
   
   return (
