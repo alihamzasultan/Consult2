@@ -43,8 +43,7 @@ const CARDS = [
     content: (
       <p>
     Has over<Highlight>5 years</Highlight> of professional
-experience as a Data Scientist building data science systems for the
-public and private sector
+experience as a Data Scientist.
       </p>
     ),
   },
@@ -55,9 +54,8 @@ public and private sector
     content: (
 <p>
   <Highlight>15+ years</Highlight>
-   of developing custom software and machine learning solutions
-  with an interest in real estate, blockchain technology, and machine
-  learning.
+   of developing custom software and machine learning solutions expirience.
+
 </p>
 
     ),
@@ -69,8 +67,8 @@ public and private sector
     content: (
 <p>
   <Highlight>Poseidon </Highlight>  with
-  <Highlight> over 10 years </Highlight> experience in custom software development,
-  PyTorch Large Language Models, course creation, and YouTube content production.
+  <Highlight> over 10 years </Highlight> experience in custom software development.
+  
 </p>
 
 
