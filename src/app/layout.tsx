@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import { FloatingNav } from "@/components/nava";
-import CookiesPopup from "@/components/ui/Cookie";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +21,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={inter.className}>
         <div>
-        <FloatingNav/>
-        <CookiesPopup/>
+        <FloatingNav/>   
         </div>
         
         {children}</body>
