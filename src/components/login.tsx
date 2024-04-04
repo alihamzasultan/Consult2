@@ -1,16 +1,14 @@
-"use client";
-import React from "react";
-import { useState } from "react";
+'use client'
+import React, { useState } from "react";
 
 export function LoginPage() {
   const [isOpen, setIsOpen] = useState(true);
   const handleClosePopup = () => {
-    
     setIsOpen(false); // Update modal state to close
-    window.location.href = "/";// Update modal state to close
+    window.location.href = "/"; // Update modal state to close
   };
 
-  return isOpen ?  (
+  return isOpen ? (
     <div
       id="login-popup"
       tabIndex={-1}
@@ -33,7 +31,7 @@ export function LoginPage() {
               <path
                 fillRule="evenodd"
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                cliprule="evenodd"
+                clipRule="evenodd" // Fix typo from cliprule to clipRule
               />
             </svg>
             <span className="sr-only">Close popup</span>
@@ -46,7 +44,7 @@ export function LoginPage() {
                 Login to your account
               </p>
               <p className="mt-2 text-sm leading-4 text-slate-600">
-              Login to https://www.morganaholdings.com
+                Login to https://www.morganaholdings.com
               </p>
             </div>
             <div className="mt-7 flex flex-col gap-2">
@@ -85,23 +83,23 @@ export function LoginPage() {
                 Email address
               </label>
               <input
-  name="email"
-  type="email"
-  autoComplete="email"
-  required={true} // or required={false} depending on your logic
-  className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-  placeholder="Email Address"
-  defaultValue=""
-/>
-<input
-  name="password"
-  type="password"
-  autoComplete="current-password"
-  required={true} // or required={false} depending on your logic
-  className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-  placeholder="Password"
-  defaultValue=""
-/>
+                name="email"
+                type="email"
+                autoComplete="email"
+                required={true} // or required={false} depending on your logic
+                className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                placeholder="Email Address"
+                defaultValue=""
+              />
+              <input
+                name="password"
+                type="password"
+                autoComplete="current-password"
+                required={true} // or required={false} depending on your logic
+                className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+                placeholder="Password"
+                defaultValue=""
+              />
 
               <p className="mb-3 mt-2 text-sm text-gray-500">
                 <a
@@ -128,7 +126,5 @@ export function LoginPage() {
         </div>
       </div>
     </div>
-
-  ): null;
-};
-
+  ) : null;
+}
